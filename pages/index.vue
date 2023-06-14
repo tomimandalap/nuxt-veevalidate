@@ -17,7 +17,7 @@ const rulesSchema = object({
     .matches(onlyPassword, "Ex: passworD12, tidak boleh spesail karakter"),
 });
 
-const { handleSubmit } = useForm({
+const { handleSubmit, handleReset } = useForm({
   validationSchema: rulesSchema,
 });
 
@@ -25,6 +25,8 @@ const onSubmit = handleSubmit((value) => {
   alert(
     `Login success, privy id: ${value.privyid} dan password: ${value.password}`
   );
+
+  handleReset();
 });
 </script>
 
