@@ -33,7 +33,8 @@ const onSubmit = handleSubmit((value) => {
 <template>
   <div class="bg-slate-50 min-h-screen flex justify-center items-center">
     <div class="border shadow-lg rounded-lg p-8 bg-white text-center w-[360px]">
-      <img src="logo.svg" alt="logo privy" class="w-[80px] mx-auto mt-2" />
+      <IconsPrivy class="w-[80px] mx-auto mt-2" />
+
       <h3 class="text-lg font-medium mt-10">Hi, Welcome Back 👋</h3>
       <p class="text-xs text-gray-400 mb-10">It's good to see you again</p>
 
@@ -71,7 +72,8 @@ const onSubmit = handleSubmit((value) => {
         type="button"
         class="bg-white rounded-full w-full text-gray-400 flex justify-center items-center p-2.5"
       >
-        <img src="qr.svg" alt="qr code" /> <span class="ml-3">QR Code</span>
+        <IconsQr />
+        <span class="ml-3">QR Code</span>
       </button>
     </div>
   </div>
