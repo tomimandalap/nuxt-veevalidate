@@ -22,7 +22,9 @@ const { handleSubmit } = useForm({
 });
 
 const onSubmit = handleSubmit((value) => {
-  console.log(value);
+  alert(
+    `Login success, privy id: ${value.privyid} dan password: ${value.password}`
+  );
 });
 </script>
 
@@ -56,7 +58,7 @@ const onSubmit = handleSubmit((value) => {
 
         <button
           type="submit"
-          class="bg-red-600 rounded-full w-full text-white p-2.5 mt-10 mb-10"
+          class="bg-red-600 rounded-full w-full text-white p-2.5 mt-10 mb-10 hover:bg-red-700"
         >
           CONTINUE
         </button>
